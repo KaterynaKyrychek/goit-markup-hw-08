@@ -1,0 +1,18 @@
+.modal-menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #000000;
+}
+// .modal-menu__icon {
+// }
+.modal-menu__button .icon-cross {
+    display: none;
+}
+.modal-menu__button.is-open .icon-cross {
+    display: block;
+}
+.modal-menu__button.is-open .icon-menu {
+    display: none;
+}
