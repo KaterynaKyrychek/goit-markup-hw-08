@@ -1,5 +1,8 @@
 .page-header {
-    background-color: $general-white;
-    height: 80px;
-    border: 1px solid #ECECEC;
+  background-color: $general-white;
+  height: 80px;
+  border: 1px solid #ececec;
+}
+.page-header .container {
+  position: relative;
 }

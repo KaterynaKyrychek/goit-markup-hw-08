@@ -1,22 +1,26 @@
+.footer__address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+  }
+}
 .address {
-
-    @media screen and (min-width:1200px) {
-        margin-top: 20px;
-    font-style: inherit;
-    }
-    
+  font-style: inherit;
 }
 
 .address__item {
-&:not(:last-child) {
+  &:not(:last-child) {
     margin-bottom: 9px;
-}
+  }
 }
 .address__link {
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    transition: color $transition-duration $transition-timing-function;
-    &:hover, &:focus {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
     color: $general-white;
-}
+  }
 }

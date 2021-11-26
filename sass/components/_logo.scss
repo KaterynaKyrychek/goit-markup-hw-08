@@ -1,13 +1,33 @@
 .logo {
-    font-family: $secondary-text-font;
-    font-weight: 700;
+  font-family: $secondary-text-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 1.38;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 24px 0;
+    font-size: 26px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0;
     font-size: 26px;
     line-height: 1.19;
-    color: $accent-color;
+  }
 }
 .logo__header {
-    color: $general-black;
+  color: $general-black;
 }
 .logo__footer {
-    color: $general-white;
+  color: $general-white;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
 }

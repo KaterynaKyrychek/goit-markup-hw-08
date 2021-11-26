@@ -1,0 +1,84 @@
+.menu-button {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  top: 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+.menu-button.is-open {
+  position: fixed;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  padding: 48px 40px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    background-color: $general-white;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      overflow: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.burger-links {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.burger-links__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.burger-links__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+.burger-links__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
